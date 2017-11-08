@@ -5,211 +5,216 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#4CAF50"
+    android:orientation="vertical"
     tools:context="com.example.android.practiceset2.MainActivity">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
-    android:orientation="horizontal"
-    android:background="#673AB7">
-
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="#0073E5">
+        android:background="#673AB7"
+        android:orientation="horizontal">
 
-        <android.support.v7.widget.AppCompatImageView
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/blue"
-            android:layout_marginTop="4dp"
-            />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Overall "
-        android:textAlignment="viewEnd"
-        android:layout_gravity="end"
-        android:textSize="24sp"
-        android:textColor="#FFFFFF" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0073E5"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/blue_overall_score"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="0"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:textSize="24sp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/blue" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Round "
-        android:textAlignment="viewEnd"
-        android:layout_gravity="end"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/blue_round_score"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="0"
-        android:textAlignment="center"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:textColor="#000000" />
-    <Button
-        android:layout_width="100dp"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Punch"
-        android:onClick="bluePunch"/>
-    <Button
-        android:layout_width="100dp"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Kick"
-        android:onClick="blueKick"/>
-    <Button
-        android:layout_width="100dp"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="K.O."
-        android:onClick="blueKO"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Overall "
+                android:textAlignment="viewEnd"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
 
+            <TextView
+                android:id="@+id/blue_overall_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="Round "
+                android:textAlignment="viewEnd"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/blue_round_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:onClick="bluePunch"
+                android:text="Punch" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:onClick="blueKick"
+                android:text="Kick" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:onClick="blueKO"
+                android:text="K.O." />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#F44336"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/red" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text=" Score"
+                android:textAlignment="viewStart"
+                android:textColor="#FFFFFF"
+
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/red_overall_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/round_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text=" 1 Score"
+                android:textAlignment="viewStart"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/red_round_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:onClick="redPunch"
+                android:text="Punch" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:onClick="redKick"
+                android:text="Kick" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:onClick="redKO"
+                android:text="K.O." />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
+    <Button
         android:layout_width="wrap_content"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="#F44336">
-
-        <android.support.v7.widget.AppCompatImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/red"
-            android:layout_marginTop="4dp"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=" Score"
-            android:textAlignment="viewStart"
-            android:layout_gravity="start"
-            android:textSize="24sp"
-
-            android:textColor="#FFFFFF"/>
-
-        <TextView
-            android:id="@+id/red_overall_score"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
-            android:textColor="#000000"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/round_number"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=" 1 Score"
-            android:textAlignment="viewStart"
-            android:layout_gravity="start"
-            android:textColor="#FFFFFF"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/red_round_score"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:textColor="#000000" />
-        <Button
-            android:layout_width="100dp"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:text="Punch"
-            android:onClick="redPunch"/>
-        <Button
-            android:layout_width="100dp"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:text="Kick"
-            android:onClick="redKick"/>
-        <Button
-            android:layout_width="100dp"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:text="K.O."
-            android:onClick="redKO"/>
-
-
-    </LinearLayout>
-
-
-</LinearLayout>
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:onClick="nextRound"
+        android:text="Next Round" />
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
         android:layout_height="40dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        android:text="Next Round"
-        android:onClick="nextRound"/>
-
-    <Button
-        android:layout_width="wrap_content"
         android:layout_gravity="center"
-        android:layout_height="40dp"
-        android:layout_marginTop="2dp"
         android:layout_marginBottom="2dp"
-        android:text="Reset"
-        android:onClick="resetButton"/>
+        android:layout_marginTop="2dp"
+        android:onClick="resetButton"
+        android:text="Reset" />
 
 </LinearLayout>
